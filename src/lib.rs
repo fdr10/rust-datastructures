@@ -1,5 +1,6 @@
 pub mod linkedlist;
 pub mod nodes;
+pub mod bloom_filter;
 //use std::cell::RefCell;
 //use std::rc::{Rc, Weak};
 //
