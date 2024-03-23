@@ -9,6 +9,7 @@ pub struct DoublyLinkedList<T> {
     tail: Option<Rc<RefCell<DoublyNode<T>>>>,
     size: usize,
 }
+
 impl<T: Copy + Debug> DoublyLinkedList<T> {
     pub fn new() -> Self {
         DoublyLinkedList {
@@ -18,6 +19,7 @@ impl<T: Copy + Debug> DoublyLinkedList<T> {
         }
     }
 
+    // This is a comment
     pub fn pop_front(&mut self) -> Option<Rc<RefCell<DoublyNode<T>>>> {
         match &mut self.head {
             None => None,
